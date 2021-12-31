@@ -24,9 +24,7 @@ def request():
         course_id=int(input("enter your serial number:"))
    
         req2=requests.get("http://saral.navgurukul.org/api/courses/"+str(id[course_id-1])+"/exercises")
-        # print(req2)
         course_detail=req2.json()
-        # print(course_detail)
         
         detail_count=1
         slug=[]
